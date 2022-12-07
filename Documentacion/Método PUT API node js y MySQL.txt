@@ -1,0 +1,20 @@
+localhost:9595/api/usuarios
+
+Opción Body
+-----------
+
+{
+  "Documento": 10183863,
+  "Rol": "Usuario",
+  "Nombre": "Juan",
+  "Apellidos": "Pérez",
+  "TipoDocumento": "Cédula de ciudadanía",
+  "Direccion": "Cra 80#39-42",
+  "Telefono": 3016975302,
+  "Correo": "juann@gmail.com",
+  "Contrasena": "abc@7809",
+  "Estado": "Activo"
+}
+
+NOTA: El campo por el que vamos a buscar debe estar en primer Lugar
+

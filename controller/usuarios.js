@@ -1,25 +1,24 @@
 const { response } = require("express")
-const Usuario = require("../models/usuario")
+const usuarios = require("../models/usuarios")
 const bcrypt = require('bcryptjs')
 
+//Método GET Usuarios
 const getUsuario = async (req, res = response) => {
-
-    const usuarios = await Usuario.find()
+    const usuario = await usuarios.find()
 
     res.json({
         msg: "GET API USUARIO",
-        usuarios
+        usuario
     })
 }
 
+//Método POST Usuarios
 const postUsuario = async (req, res) => {
     const { Rol, Nombre, Apellidos, TipoDocumento, Documento, Direccion, Telefono, Correo, Contrasena, Estado } = req.body
+    const usuario = new usuarios({ Rol, Nombre, Apellidos, TipoDocumento, Documento, Direccion, Telefono, Correo, Contrasena, Estado })
 
-    const usuario = new Usuario({ Rol, Nombre, Apellidos, TipoDocumento, Documento, Direccion, Telefono, Correo, Contrasena, Estado })
-
-    //Encriptamiento
+    //Encriptamiento método POST
     usuario.Contrasena = bcrypt.hashSync(Contrasena, 10)
-
     await usuario.save()
 
     res.json({
@@ -28,33 +27,40 @@ const postUsuario = async (req, res) => {
     })
 }
 
+//Método PUT Usuarios
 const putUsuario = async (req, res) => {
     const { Rol, Nombre, Apellidos, TipoDocumento, Documento, Direccion, Telefono, Correo, Contrasena, Estado } = req.body
-    const usuario1 = await usuario.findOneAndUpdate({ Documento: Documento }, { Rol: Rol, Nombre: Nombre, Apellidos: Apellidos, TipoDocumento: TipoDocumento, Direccion: Direccion, Telefono: Telefono, Correo: Correo, Contrasena: Contrasena, Estado: Estado })
+    const usuario = await usuarios.findOneAndUpdate({ Documento: Documento }, { Rol: Rol, Nombre: Nombre, Apellidos: Apellidos, TipoDocumento: TipoDocumento, Direccion: Direccion, Telefono: Telefono, Correo: Correo, Contrasena: Contrasena, Estado: Estado })
+
+    //Encriptamiento método PUT
+    usuario.Contrasena = bcrypt.hashSync(Contrasena, 10)
+    await usuario.save()
 
     res.json({
         msg: 'Método PUT Usuarios',
-        usuario1
+        usuario
     })
 }
 
+//Método PATCH Usuarios
 const patchUsuario = async (req, res) => {
-    const { Documento, Nombre, Estado } = req.body
-    const usuario1 = await usuario.findOneAndUpdate({ Documento: Documento }, { Nombre: Nombre }, { Estado: Estado })
+    const { Nombre, Documento, Estado } = req.body
+    const usuario = await usuarios.findOneAndUpdate({ Documento: Documento }, { Nombre: Nombre, Estado: Estado })
 
     res.json({
         msg: 'Método PATCH Usuarios',
-        usuario1
+        usuario
     })
 }
 
+//Método DELETE Usuarios
 const deleteUsuario = async (req, res) => {
     const { Documento } = req.query
-    const usuario1 = await usuario.findOneAndDelete({ Documento: Documento })
+    const usuario = await usuarios.findOneAndDelete({ Documento: Documento })
 
     res.json({
         msg: 'Método DELETE Usuarios',
-        usuario1
+        usuario
     })
 }
 

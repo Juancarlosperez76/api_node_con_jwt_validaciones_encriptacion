@@ -1,0 +1,108 @@
+localhost:9595/api/usuarios
+
+Opción Body
+-----------
+
+{
+  "Rol": "Administrador",
+  "Nombre": "Juan Carlos",
+  "Apellidos": "Pérez Molina",
+  "TipoDocumento": "Cédula",
+  "Documento": 10183863,
+  "Direccion": "Calle 30#77-78",
+  "Telefono": 3117794075,
+  "Correo": "sebasydan@gmail.com",
+  "Contrasena": "abc123",
+  "Estado": "Activo"
+}
+
+{
+  "Rol": "Empleado",
+  "Nombre": "Adrian",
+  "Apellidos": "Romero",
+  "TipoDocumento": "Cédula de extrnajería",
+  "Documento": 1022112765,
+  "Direccion": "Cra 55#72-18",
+  "Telefono": 3146794071,
+  "Correo": "adrian@gmail.com",
+  "Contrasena": "adrian10",
+  "Estado": "Activo"
+}
+
+{
+  "Rol": "Empleado",
+  "Nombre": "Josefina",
+  "Apellidos": "López",
+  "TipoDocumento": "Cédula",
+  "Documento": 50839746,
+  "Direccion": "Cra 59#12-16",
+  "Telefono": 2147483647,
+  "Correo": "josefina@gmail.com",
+  "Contrasena": "fgh2ffh29",
+  "Estado": "Activo"
+}
+
+{
+  "Rol": "Empleado",
+  "Nombre": "Oscar Esteban",
+  "Apellidos": "Gutierrez",
+  "TipoDocumento": "Cédula",
+  "Documento": 78832746,
+  "Direccion": "Calle 16#80-35",
+  "Telefono": 3216795079,
+  "Correo": "oscar@gmail.com",
+  "Contrasena": "fghjy5646",
+  "Estado": "Activo"
+}
+
+{
+  "Rol": "Empleado",
+  "Nombre": "María del Pilar",
+  "Apellidos": "Ibarra",
+  "TipoDocumento": "Cédula de extranjería",
+  "Documento": 56103743,
+  "Direccion": "Calle 112#60-98",
+  "Telefono": 3139120245,
+  "Correo": "maria23@gmail.com",
+  "Contrasena": "$fgffdh6788!",
+  "Estado": "Activo"
+}
+
+{
+  "Rol": "Empleado",
+  "Nombre": "Diego Alberto",
+  "Apellidos": "Torres Bastidas",
+  "TipoDocumento": "Cédula",
+  "Documento": 18092347,
+  "Direccion": "Cra 80#52-47",
+  "Telefono": 3017480934,
+  "Correo": "diego23@gmail.com",
+  "Contrasena": "tew23iopa&",
+  "Estado": "Activo"
+}
+
+{
+  "Rol": "Cliente",
+  "Nombre": "Wilson",
+  "Apellidos": "Bastidas Marín",
+  "TipoDocumento": "Cédula",
+  "Documento": 43789154,
+  "Direccion": "Cra 72#10-09",
+  "Telefono": 3169870243,
+  "Correo": "wilson23@gmail.com",
+  "Contrasena": "qhjs20&er3",
+  "Estado": "Activo"
+}
+
+{
+  "Rol": "Cliente",
+  "Nombre": "Anderson Camilo",
+  "Apellidos": "Roa Parra",
+  "TipoDocumento": "Cédula",
+  "Documento": 24836012,
+  "Direccion": "Cll 33#76-32",
+  "Telefono": 3202760934,
+  "Correo": "ander26@gmail.com",
+  "Contrasena": "fgdh$%gg8%",
+  "Estado": "Activo"
+}

@@ -1,0 +1,9 @@
+localhost:9595/api/auth/login
+
+Opción Body
+-----------
+
+{
+  "Correo": "sebasydan@gmail.com",
+  "Contrasena": "abc123"
+}

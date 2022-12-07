@@ -1,14 +1,12 @@
 {
     "name": "api_node_con_jwt_validaciones_encriptacion",
     "version": "1.0.0",
-    "description": "Express con HTTP",
+    "description": "API Node con JWT, Express validator y encriptacion de contraseña",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "keywords": [
-        "http"
-    ],
+    "keywords": [],
     "author": "Juan Carlos Pérez",
     "license": "ISC",
     "dependencies": {

@@ -1,0 +1,7 @@
+localhost:9595/api/usuarios
+
+Opción Query
+------------
+
+parameter:  vacío
+value:      vacío

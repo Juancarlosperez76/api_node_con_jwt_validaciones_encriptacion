@@ -10,7 +10,7 @@ class Server {
         this.port = process.env.port; //El puerto de la aplicacion
 
         this.usuariosPath = '/api/usuarios'
-        this.vehiculosPath = '/api/vehiculos'
+
         this.authPath = '/api/auth'
 
         this.conectarDB() //Metodo para la conexion   
@@ -18,8 +18,6 @@ class Server {
         this.middlewares() // Incluir funcionalidades a la aplicacion
 
         this.routes() // Incuir las rutas
-
-
     }
 
     async conectarDB() {
@@ -34,11 +32,8 @@ class Server {
 
     routes() {// Rutas de la aplicacion
         this.app.use(this.usuariosPath, require('../routes/usuarios'))
-        this.app.use(this.vehiculosPath, require('../routes/vehiculos'))
         this.app.use(this.authPath, require('../routes/auths'))
     }
-
-
 
     listen() {//Para escuchar el puerto
         this.app.listen(this.port, (req, res) => {
