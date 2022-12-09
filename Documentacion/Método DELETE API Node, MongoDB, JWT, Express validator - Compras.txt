@@ -1,0 +1,8 @@
+localhost:9595/api/compras
+
+Opción Query
+------------
+
+parameter:  Id
+value:      1
+

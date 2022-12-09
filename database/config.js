@@ -1,5 +1,3 @@
-
-
 const mongoose = require('mongoose');
 
 const dbConnection = async() =>{
@@ -15,7 +13,6 @@ const dbConnection = async() =>{
         console.log('Conexion no establecida');
     }       
 }
-
 
 module.exports = {
     dbConnection

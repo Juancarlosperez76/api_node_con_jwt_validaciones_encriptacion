@@ -1,0 +1,20 @@
+localhost:9595/api/servicios
+
+Opción Body
+-----------
+
+{
+  "Id": 1,
+  "Nombre": "Corte de cabello",
+  "Descripcion": "Corte sencillo para dama, caballero y niño",
+  "Tiempo": 30,
+  "Estado": "Activo"
+}
+
+{
+  "Id": 2,
+  "Nombre": "Maquillaje básico",
+  "Descripcion": "Maquillaje básico para dama",
+  "Tiempo": 30,
+  "Estado": "Activo"
+}

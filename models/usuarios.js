@@ -1,7 +1,6 @@
 const { Schema, model } = require('mongoose');
-const { required } = require('nodemon/lib/config');
 
-const UsuarioSchema = Schema({
+const usuarioSchema = Schema({
 
     Rol: {
         type: String,
@@ -47,4 +46,4 @@ const UsuarioSchema = Schema({
     }
 })
 
-module.exports = model('Usuario', UsuarioSchema)
+module.exports = model('usuario', usuarioSchema)

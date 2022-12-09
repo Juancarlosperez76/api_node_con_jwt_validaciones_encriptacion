@@ -1,5 +1,4 @@
 // instalar con npm i jsonwebtoken
-
 const jwt = require("jsonwebtoken")
 
 const generarJWT = (uid = "") => {

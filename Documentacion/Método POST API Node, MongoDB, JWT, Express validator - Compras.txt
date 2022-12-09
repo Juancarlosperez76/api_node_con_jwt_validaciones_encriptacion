@@ -1,0 +1,22 @@
+localhost:9595/api/compras
+
+Opción Body
+-----------
+
+{
+  "Id": 1,
+  "Producto": "Shampoo",
+  "FechaCompra": "30 noviembre de 2022",
+  "Proveedor": "L'OREAL",
+  "Total": 220000,
+  "Estado": "Activo"
+}
+
+{
+  "Id": 2,
+  "Producto": "Labial",
+  "FechaCompra": "12 octubre de 2022",
+  "Proveedor": "Revlon",
+  "Total": 245500,
+  "Estado": "Activo"
+}

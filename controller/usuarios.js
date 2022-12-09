@@ -7,7 +7,7 @@ const getUsuario = async (req, res = response) => {
     const usuario = await usuarios.find()
 
     res.json({
-        msg: "GET API USUARIO",
+        msg: "Método GET Usuarios",
         usuario
     })
 }
@@ -19,10 +19,12 @@ const postUsuario = async (req, res) => {
 
     //Encriptamiento método POST
     usuario.Contrasena = bcrypt.hashSync(Contrasena, 10)
+
+    //Guarda los datos de registro
     await usuario.save()
 
     res.json({
-        msg: "POST API USUARIO",
+        msg: "Método POST Usuarios",
         usuario
     })
 }

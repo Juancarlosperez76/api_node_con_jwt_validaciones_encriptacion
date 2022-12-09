@@ -1,0 +1,13 @@
+localhost:9595/api/compras
+
+Opción Body
+-----------
+
+{
+  "Id": 1,
+  "Producto": "Mascarilla",
+  "Estado": "Activo"
+}
+
+NOTA: El campo por el que vamos a buscar debe estar en primer Lugar
+

@@ -1,0 +1,16 @@
+localhost:9595/api/compras
+
+Opción Body
+-----------
+
+{
+  "Id": 1,
+  "Producto": "Esmalte",
+  "FechaCompra": "16 enero de 2021",
+  "Proveedor": "Masglo",
+  "Total": 538000,
+  "Estado": "Inactivo"
+}
+
+NOTA: El campo por el que vamos a buscar debe estar en primer Lugar
+

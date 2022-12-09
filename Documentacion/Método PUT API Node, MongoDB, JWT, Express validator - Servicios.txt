@@ -1,0 +1,15 @@
+localhost:9595/api/servicios
+
+Opción Body
+-----------
+
+{
+  "Id": 1,
+  "Nombre": "Base niño",
+  "Descripción": "Corte de cabello con base",
+  "Tiempo": 45,
+  "Estado": "Inactivo"
+}
+
+NOTA: El campo por el que vamos a buscar debe estar en primer Lugar
+

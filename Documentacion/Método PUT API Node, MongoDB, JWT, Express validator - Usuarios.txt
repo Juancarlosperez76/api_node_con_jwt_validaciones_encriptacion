@@ -13,7 +13,7 @@ Opción Body
   "Telefono": 3016975302,
   "Correo": "juann@gmail.com",
   "Contrasena": "abc@7809",
-  "Estado": "Activo"
+  "Estado": "Inactivo"
 }
 
 NOTA: El campo por el que vamos a buscar debe estar en primer Lugar

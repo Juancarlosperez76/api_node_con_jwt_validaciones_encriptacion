@@ -22,7 +22,7 @@ router.post('/', [
     check('Contrasena', 'El campo Contraseña es obligatorio').not().isEmpty(),
     check('Contrasena', 'La contraseña debe contener mas de 4 caracteres').isLength({ min: 4 }),
     check('Estado', 'El campo Estado es obligatorio').not().isEmpty(),
-    check('Estado', 'No es un estado válido').isIn(['Activo', 'Inactivo']),
+    check('Estado', 'Ingrese un estado válido').isIn(['Activo', 'Inactivo']),
 
     validarCampos
 ], postUsuario)

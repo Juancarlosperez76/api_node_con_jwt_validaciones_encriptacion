@@ -1,0 +1,13 @@
+localhost:9595/api/servicios
+
+Opción Body
+-----------
+
+{
+  "Id": 1,
+  "Nombre": "Extensión de uñas",
+  "Estado": "Activo"
+}
+
+NOTA: El campo por el que vamos a buscar debe estar en primer Lugar
+
